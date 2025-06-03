@@ -1,0 +1,13 @@
+{
+  "name": "playwright-pom-bdd-framework",
+  "version": "1.0.0",
+  "scripts": {
+    "bdd": "cucumber-js --require-module ts-node/register --require features/step_definitions/**/*.ts --require support/**/*.ts features/**/*.feature"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.0.0",
+    "@playwright/test": "^1.43.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
