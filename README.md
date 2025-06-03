@@ -26,19 +26,18 @@ playwright-pom-bdd/
 │   └── world.ts                    # Custom World con Page
 ├── tsconfig.json
 ├── package.json
+
+
 ⚙️ Requisitos
 Node.js 18 o superior
-
 npm o yarn
 
 🚀 Instalación
-bash
-Copy
 npm install
+
 🧪 Cómo Ejecutar las Pruebas
-bash
-Copy
 npm run bdd
+
 🧱 Características
 ✅ Navegación a páginas
 
@@ -57,8 +56,7 @@ npm run bdd
 ✅ Polimorfismo al sobrescribir métodos de páginas base
 
 🧪 Ejemplo de Page Object
-ts
-Copy
+
 export class LoginPage {
   constructor(private page: Page) {}
 
@@ -76,6 +74,7 @@ export class LoginPage {
     await this.page.waitForSelector('.profile-page');
   }
 }
+
 🎯 Principios SOLID y POO Aplicados
 S: Cada Page Object tiene una responsabilidad única.
 
